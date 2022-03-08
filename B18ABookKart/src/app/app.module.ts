@@ -8,10 +8,15 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from "@angular/material/icon";
 import { MatSliderModule } from "@angular/material/slider";
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HomeComponent } from './home/home.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -21,7 +26,7 @@ import { MatSliderModule } from "@angular/material/slider";
     MatButtonModule,
     MatIconModule,
     MatSliderModule,
-
+    MatCardModule
 
   ],
   providers: [],
