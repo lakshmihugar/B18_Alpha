@@ -1,14 +1,21 @@
 .container{
-    
+    border: 3px solid grey;
     position:relative;
    margin: 25px;
-    padding: 25px;
-   
-  
+    padding: 10px;
+    
 }
-h3{
-    color: blue;
-}
+
 mat-card{
-    box-sizing:inherit;
+    max-width:1000px
+}
+.example-card{
+    
+    max-width: 1000px;
+    border: 3px solid grey;
+    position:relative;
+   margin: 25px;
+    padding: 10px;
+    
+  
 }
