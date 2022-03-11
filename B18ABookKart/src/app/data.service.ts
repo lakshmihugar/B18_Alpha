@@ -9,6 +9,7 @@ export class DataService {
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
   verticalPosition: MatSnackBarVerticalPosition = 'top';
   durationInSeconds = 2;
+  enum=1000;
   
 
   constructor(private snackBar: MatSnackBar) { }
@@ -17,7 +18,8 @@ export class DataService {
     this.snackBar.open('Item added to wishlist', 'Close', {
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
-      duration: this.durationInSeconds * 1000
+      duration: this.durationInSeconds*this.enum
+
     })
   }
 
@@ -25,7 +27,7 @@ export class DataService {
     this.snackBar.open('Item removed from wishlist', 'Close', {
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
-      duration: this.durationInSeconds * 1000
+      duration: this.durationInSeconds * this.enum
     })
   }
 
@@ -33,7 +35,7 @@ export class DataService {
     this.snackBar.open('Wishlist cleared!!!', 'Close', {
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
-      duration: this.durationInSeconds * 1000
+      duration: this.durationInSeconds *this.enum
     })
   }
 
@@ -42,7 +44,7 @@ export class DataService {
     this.snackBar.open('Item added to cart', 'Close', {
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
-      duration: this.durationInSeconds * 1000
+      duration: this.durationInSeconds * this.enum
     })
   }
 
@@ -50,7 +52,7 @@ export class DataService {
     this.snackBar.open('One item added to Cart', 'Close', {
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
-      duration: this.durationInSeconds * 1000
+      duration: this.durationInSeconds * this.enum
     })
   }
 
@@ -58,7 +60,7 @@ export class DataService {
     this.snackBar.open('One item removed from Cart', 'Close', {
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
-      duration: this.durationInSeconds * 1000
+      duration: this.durationInSeconds * this.enum
     })
   }
 
@@ -67,7 +69,7 @@ export class DataService {
     this.snackBar.open('Product removed from Cart', 'Close', {
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
-      duration: this.durationInSeconds * 1000
+      duration: this.durationInSeconds * this.enum
     })
   }
 
@@ -75,7 +77,7 @@ export class DataService {
     this.snackBar.open('Cart Cleared!!!', 'Close', {
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
-      duration: this.durationInSeconds * 1000
+      duration: this.durationInSeconds * this.enum
     })
   }
 
@@ -83,7 +85,7 @@ export class DataService {
     this.snackBar.open('Order Placed Succussfully', 'Close', {
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
-      duration: this.durationInSeconds * 1000
+      duration: this.durationInSeconds * this.enum
     })
   }
 }
