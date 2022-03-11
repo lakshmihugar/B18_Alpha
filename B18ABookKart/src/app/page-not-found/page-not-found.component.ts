@@ -11,7 +11,7 @@ export class PageNotFoundComponent implements OnInit {
   constructor(private router:Router) { }
   ngOnInit() {
 this.urlName=this.router.url;
-console.log(this.router.url);
+
    
   }
   

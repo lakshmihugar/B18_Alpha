@@ -9,6 +9,7 @@ export class DataService {
   horizontalPosition: MatSnackBarHorizontalPosition = 'center';
   verticalPosition: MatSnackBarVerticalPosition = 'top';
   durationInSeconds = 2;
+  
 
   constructor(private snackBar: MatSnackBar) { }
 
